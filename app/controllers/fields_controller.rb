@@ -4,6 +4,7 @@ class FieldsController < ApplicationController
 
   def index
     @fields = Field.all
+    @fields = policy_scope(Field).order(created_at: :desc)
   end
 
   def show
@@ -11,6 +12,7 @@ class FieldsController < ApplicationController
 
   def new
     @field = Field.new
+    authorize @field
   end
 
   def create
@@ -21,6 +23,7 @@ class FieldsController < ApplicationController
     else
       render :new
     end
+    authorize @field
   end
 
   # def edit
