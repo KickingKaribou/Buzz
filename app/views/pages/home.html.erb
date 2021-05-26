@@ -1,7 +1,23 @@
  <div class="text-center">
-  <img src="logo_small.png">
+  <img src="app/assets/images/logo_small.png">
   <h1>BUZZ</h1>
-  <input class="ButtonClass" type="button" value="Start your journey" onclick="http://localhost:3000/fields">
  </div>
 
+<!--Tablist on top of home page -->
+ <div class="row-navbar">
+  <ul>
+    <li> <%= link_to "Fields to rent", "/fields" %> </li>
+    <li> <a href="">Experiences</a> </li>
+    </ul>
+ </div>
 
+<!--Data panel on top of home page -->
+<div class="Data_panel">
+  <h2>Search</h2>
+ <ul>
+    <li> <a href="">Location</a> </li>
+    <li> <a href="">Check-in</a> Add dates</li>
+    <li> <a href="">Check-out</a> Add dates</li>
+    <li> <a href="">Search</a> </li>
+ </ul>
+</div>
