@@ -1,0 +1,13 @@
+<div class="card-trip">
+  <%= image_tag "Field1.jpg" %>
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= @field.name %></h2>
+      <p><%= @field.description %></p>
+      <p><%= @field.address %></p>
+      <p><%= @field.created_at %></p>
+    </div>
+    <h2 class="card-trip-pricing"><%= @field.price %> €/Month</h2>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  </div>
+</div>
