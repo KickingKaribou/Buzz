@@ -1,0 +1,19 @@
+<h2 class="text-center"> Your booking for: <%= @field.name %></h2>
+ <div class="mx-auto w-75 my-5">
+    <h2 class="text-center">Please enter your dates</h2>
+
+    <%= simple_form_for [@field, @booking], html: { class: 'w-100' } do |f| %>
+      <%= f.input :starting_date %>
+      <%= f.input :ending_date %>
+      <%= f.submit "Submit", data: { confirm: "Your booking is confirmed" } %>
+    <%end%>
+  </div>
+
+
+
+
+
+
+
+
+

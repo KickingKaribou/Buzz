@@ -8,6 +8,8 @@ class FieldsController < ApplicationController
   end
 
   def show
+    @field = Field.find(params[:id])
+    authorize @field
   end
 
   def new

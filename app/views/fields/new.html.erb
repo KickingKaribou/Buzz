@@ -1,0 +1,20 @@
+  <div class="mx-auto w-75 my-5">
+    <h2 class="text-center">Please describe your field</h2>
+
+    <%= simple_form_for @field, html: { class: 'w-100' } do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :size %>
+      <%= f.input :price %>
+      <%= f.input :description, as: :text %>
+      <%= f.input :category, collection: [ "Field", "Wood" ] %>
+      <%= f.button :submit, 'Submit', class: "btn btn-default btn-primary" %>
+    <%end%>
+  </div>
+
+
+
+
+
+
+
