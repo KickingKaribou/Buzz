@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Field.destroy_all
+User.destroy_all
 puts 'Creating users...'
 tester = User.new(user_name: "Tes", email: "test@test.com", password: "123456")
 tester.save!
