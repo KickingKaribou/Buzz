@@ -1,33 +1,12 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('assets/images/background.png');">
+<div class="banner" style="background-image: url('<%= image_path "background.png" %>');">
   <div class="container">
     <h1><strong>Looking for a place to bee</strong>?</h1>
-    <p>You have a space for bees to thrive but no hive?<br>
+    <p>You have space for bees to thrive but no hive?<br>
       Got bees but nowhere to be?</p>
     <p>BUZZ brings you together</p>
     <div>
-        <%= link_to "Fields to rent", 'fields', class: "btn btn-flat" %>
-    <%= link_to "Rent your field", 'fields/new', class: "btn btn-flat" %>
+      <%= link_to "Fields to rent", 'fields', class: "btn btn-warning" %>
+      <%= link_to "Rent your field", 'fields/new', class: "btn btn-warning" %>
     </div>
-  </div>
-</div>
-
-<div class="footer">
-  <div class="footer-left">
-    <%= link_to "Become a buzzer", "new_user_session_path", class: "btn btn-flat" %>
-    <%= link_to "How to keep bees", "#", class: "btn btn-flat" %>
-  </div>
-  <div class="footer-middle-1">
-   <%= link_to "What should I do with all the honey from my renters?", "#", class: "btn btn-flat" %>
-  </div>
-  <div class="footer-middle-2">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="footer-right">
-    <%= link_to "Career at BUZZ", "#", class: "btn btn-flat" %>
-    <%= link_to "Buzziness", "#", class: "btn btn-flat" %>
-    <%= link_to "Contact", "#", class: "btn btn-flat" %>
   </div>
 </div>
