@@ -1,7 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <a class="navbar-brand" href="#">
-    <img src="logo_small.png"/>
-    <img src="logo_small.png"/>
+    <h1>Buzz</h1>
     <p>Find a sweet spot</p>
 </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +31,13 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
   <div class="container">
     <h1><strong>Looking for a place to bee</strong>?</h1>
-    <p>You have a space for bees to thrive but no hive?</p>
-    <p>Gett bees but nowhere to be?</p>
+    <p>You have a space for bees to thrive but no hive?
+      Get bees but nowhere to be?</p>
     <p>BUZZ brings you together</p>
   </div>
   <div>
-    <%= link_to "Fields to rent", "#", class: "btn btn-flat" %>
-    <%= link_to "Rent your field", "#", class: "btn btn-flat" %>
+    <%= link_to "Fields to rent", "/fields", class: "btn btn-flat" %>
+    <%= link_to "Rent your field", "/fields/new", class: "btn btn-flat" %>
   </div>
 </div>
 
