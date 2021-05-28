@@ -8,9 +8,9 @@
      <h2><%= field.name %></h2>
      <p><%= field.description %></p>
     </div>
-    <h2 class="card-trip-pricing"><%= field.price %></h2>
+    <h2 class="card-trip-pricing"><%= field.price %>€</h2>
   </div>
-   <%= link_to 'Show field', new_field_path, class: "m-3" %>
+   <%= link_to 'Details', field_path(field), class: "m-3 btn btn-warning" %>
 </div>
    <% end %>
 </div>

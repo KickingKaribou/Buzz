@@ -6,6 +6,7 @@
   height: 100px;
   padding: 0px 50px;
   color: rgba(255,255,255,0.9);
+  margin-top: 20px;
 }
 .footer-links {
   display: flex;
@@ -27,4 +28,10 @@
 
 .footer a,p {
   color: white;
+}
+.app{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
 }

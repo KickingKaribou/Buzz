@@ -18,14 +18,17 @@
   </head>
 
   <body>
+   
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-    <%= render 'shared/navbar' %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
+    <div class="app">
+      <%= render 'shared/navbar' %>
+      <main> <%= yield %> </main>
+      <%= render 'shared/footer' %>
+    </div>
   </body>
 </html>
