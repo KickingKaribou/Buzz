@@ -1,27 +1,16 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <a class="navbar-brand" href="#">
-    <img src="logo_small.png"/>
-    <img src="logo_small.png"/>
-    <p>Find a sweet spot</p>
-</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href=user_session_path>Sign Up</a>
+        <%= link_to "Home", "roots_path", class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href=new_user_session_path>Log In</a>
+        <%= link_to "Messages", "#", class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
-        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <%= link_to "Action", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
         </div>
       </li>
     </ul>
@@ -37,14 +26,14 @@
     <p>BUZZ brings you together</p>
   </div>
   <div>
-    <%= link_to "Fields to rent", "#", class: "btn btn-flat" %>
-    <%= link_to "Rent your field", "#", class: "btn btn-flat" %>
+    <%= link_to "Fields to rent", "field_path", class: "btn btn-flat" %>
+    <%= link_to "Rent your field", "new_field_path", class: "btn btn-flat" %>
   </div>
 </div>
 
 <div class="footer">
   <div class="footer-left">
-    <%= link_to "Become a buzzer", "#", class: "btn btn-flat" %>
+    <%= link_to "Become a buzzer", "new_user_session_path", class: "btn btn-flat" %>
     <%= link_to "How to keep bees", "#", class: "btn btn-flat" %>
   </div>
   <div class="footer-middle-1">

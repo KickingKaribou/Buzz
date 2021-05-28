@@ -1,14 +1,19 @@
-<div class="card-trip">
-  <%= image_tag "Field1.jpg" %>
-  <div class="card-trip-infos">
+<div class="container d-flex align-items-center justify-content-center">
+ <div class="card-trip">
+  <%= image_tag("Field1.jpg") %>
+   <div class="card-trip-infos">
     <div>
       <h2><%= @field.name %></h2>
       <p><%= @field.description %></p>
       <p><%= @field.address %></p>
       <p><%= @field.created_at %></p>
+
     </div>
-    <h2 class="card-trip-pricing"><%= @field.price %> €/Month</h2>
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-    <%= link_to "Book now", "#", class: "btn btn-flat" %>
+     <div class="card-pricing">
+      <h2 class="card-trip-pricing mt-2"><%= @field.price %> €/Month</h2>
+      <%= link_to "Book now", "new_field_booking_path", class: "btn btn-flat" %>
+     </div>
+      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
   </div>
+ </div>
 </div>
