@@ -1,32 +1,29 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "logo_small.png", class: "navbar-brand" do %>
-    <%= image_tag "logo_small.png" %>
-  <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-     <% if user_signed_in? %>
-
-      <li class="nav-item dropdown">
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Create your own field", new_field_path, class: "dropdown-item" %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+ <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <%= image_tag "logo_small.png" , height:"100%" %>
+          <h1 class="ml-2">Buzz</h1>
+          <p class="ml-5 mt-4">Find a sweet spot</p>
+          <%= image_tag "bee_line.png", width: "400px", id:"bee_line", class:"ml-4" %>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <%# <li class="nav-item active">
+              <a class="nav-link" href=user_session_path>Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=new_user_session_path>Log In</a>
+            </li> %>
+            <li class="nav-item dropdown">
+              <%# <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src='/assets/images/user_small.png' /> %>
+              <%= image_tag "user_small.png", class:"avatar"  %>
+              <%# <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a> %>
+              <%# </div> %>
+            </li>
+          </ul>
         </div>
-      </li>
-
-     <% else %>
-     <li class="nav-item active">
-        <%= link_to "Sign In", new_user_session_path, class: "nav-link" %>
-     </li>
-
-     <% end %>
-
-    </ul>
-  </div>
-</div>
+      </div>
