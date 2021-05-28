@@ -1,15 +1,32 @@
-<h1>Your bookings</h1>
+<div>
+  <h1><%= current_user.first_name %></h2>
+  <p><%= current_user.phone_number%></p>
+  <p><%= current_user.email%></p>
+</div>
+<h2>My bookings</h2>
 <table>
   <tbody>
     <% @bookings.each do |booking| %>
       <tr>
-        <td><%= booking.starting_date %></td>
         <td><%= booking.field.name %></td>
+        <td><%= booking.starting_date %></td>
+        <td><%= booking.ending_date %></td>
         <td><%= link_to 'delete', booking_path(booking), method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

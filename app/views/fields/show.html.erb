@@ -11,7 +11,7 @@
     </div>
      <div class="card-pricing">
       <h2 class="card-trip-pricing mt-2"><%= @field.price %> €/Month</h2>
-      <%= link_to "Book now", "new_field_booking_path", class: "btn btn-flat" %>
+      <%= link_to "Book now", new_field_booking_path(@field), class: "btn btn-flat" %>
      </div>
       <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
   </div>
